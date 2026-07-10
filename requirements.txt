@@ -1,0 +1,12 @@
+# Root requirements for llm-mlops-pipeline.
+# compare_eval.py, model_registry.py, and monitor.py use only the
+# standard library (json, urllib, subprocess, argparse) -- listed here
+# is only what's needed for the canary router and tests.
+
+# --- Canary router ---
+fastapi
+uvicorn
+httpx
+
+# --- Testing ---
+pytest
